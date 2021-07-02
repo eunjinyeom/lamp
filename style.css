@@ -1,0 +1,139 @@
+/* style.css */
+:root {
+    --main-color: #017143;
+    --sub-color1: 
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #444;
+   /* background: linear-gradient(0deg, #ccc, #fff 30%); */
+   background: rgb(231, 207, 231);
+}
+
+p {
+    line-height: 1.6em;
+}
+
+#main-header {
+    width: auto;
+    height: 200px;
+    /* background: #ccc; */
+    position: relative;
+}
+
+#main-header h1 {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+}
+
+#gnb {
+    position: absolute;
+    right: 100px;
+    top: 80px;
+}
+
+#gnb > ul > li {
+    display: inline-block;
+    margin-left: 3em;
+}
+
+#gnb > ul > li > a {
+    text-decoration: none;
+    color: #444;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+#title .title-group {
+    /* outline: 1px solid red; */
+    width: 50%;
+    height: calc(100vh - 200px);
+    float: left;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+#title .title-group h2 {
+    font-size: 46px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#title .title-group h2 > span {
+    font-weight: 800;
+    color: orangered;
+}
+
+#title figure {
+    width: 50%;
+   /* outline: 1px solid red; */
+    float: left;
+    text-align: center;
+    height: calc(100vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title figure img {
+    max-width: 100%;
+  }
+
+.more-btn {
+    background: var(--main-color);
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin-top: 1em;
+  }
+
+  /* 하단 이미지 아이콘 */
+nav.pager {
+    position: fixed;
+    bottom: 20PX;
+    left: 50%;
+    /* outline: 1px solid red; */
+    transform: translateX(-50%);
+  }
+
+nav.pager > ul > li {
+    display: inline-block;
+    /* outline: 1px solid green; */
+}
+
+nav.pager > ul > li > a {
+    display: block;
+    text-align: center;
+    transition: scale(1.2);
+}
+
+nav.pager > ul > li > a > img {
+    width: 50%;
+}
+
+nav.sns {
+    position: fixed;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+   
+}
+
+nav.sns img {
+    width: 32px;
+    margin-bottom: 1em;
+}
+
+
+
+
